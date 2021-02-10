@@ -5,7 +5,7 @@ $password = "123456";
 $port = "3306";
 
 //connect
-$conn = new mysql($servername,$username,$password);
+$conn = new mysqli($servername,$username,$password);
 
 if($conn->connect_error){
 	die("connection failed: ".$conn->connection_error);
