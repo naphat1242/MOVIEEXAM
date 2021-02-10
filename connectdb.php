@@ -7,7 +7,7 @@ $port = "3306";
 //connect
 $conn = new mysqli($servername,$username,$password);
 
-if($conn->connect_error){
+if($conn->connection_error){
 	die("connection failed: ".$conn->connection_error);
 }
 echo "Connected successfully";
